@@ -1,1 +1,11 @@
 // Quiz question object
+
+
+
+var quizQuestions = [{
+    question: "What does the acronym D.O.M. stand for?",
+    choiceA: "Digital Object Model",
+    choiceB: "Display Old Management",
+    choiceC: "Digital Ordinance Model",
+    choiceD: "Document Object Model",
+    correctAnswer: "a"}]

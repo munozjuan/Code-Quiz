@@ -1,4 +1,3 @@
-
 // html vars 
 var quizBody = document.getElementById("quiz");
 var finalScoreEl = document.getElementById("finalScore");
@@ -76,7 +75,7 @@ var quizQuestions = [{
 // Other global variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 76;
+var timeLeft = 60;
 var timerInterval;
 var score = 0;
 var correct;

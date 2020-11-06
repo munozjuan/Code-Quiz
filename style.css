@@ -36,7 +36,11 @@ root{
       }
     
       button {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: 0 auto;
         font-family: Helvetica;
         background-color: #061ef5;
         border-radius: 10px;
@@ -46,7 +50,6 @@ root{
         font-size: 15px;
         padding: 20px;
         width: 200px;
-        margin-top: 3px;
       }
     
       button:hover{
@@ -61,7 +64,7 @@ root{
     
     #timer{
         text-align: center;
-        font-family: sans-serif;
+        font-family: Helvetica;
         background-color: #061ef5;
         color: #eeeeee;
         font-size: x-large;
@@ -131,14 +134,14 @@ root{
     #highscore-score{
         float: right;
         padding-right: 8.75rem;
-        font-family: sans-serif;
+        font-family: Helvetica;
         font-weight: bold;
     }
     
     #finalScore{
         padding-bottom: 0.5rem;
         font-size: x-large;
-        font-family: sans-serif;
+        font-family: helvetica;
         font-weight: bold;
     }
     

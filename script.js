@@ -28,20 +28,48 @@ var buttonD = document.getElementById("d");
 
 //Code Quiz questions
 var quizQuestions = [{
-    question: "What does the acronym D.O.M. stand for?",
-    choiceA: "Digital Object Model",
-    choiceB: "Display Old Management",
-    choiceC: "Digital Ordinance Model",
-    choiceD: "Document Object Model",
-    correctAnswer: "d"},
-        {
+        question: "What does the acronym D.O.M. stand for?",
+        choiceA: "Digital Object Model",
+        choiceB: "Display Old Management",
+        choiceC: "Digital Ordinance Model",
+        choiceD: "Document Object Model",
+        correctAnswer: "d"},
+    
+    {
         question: "What HTML tags are JavaScript code wrapped in?",
-    choiceA: "&lt;div&gt;",
-    choiceB: "&lt;link&gt;",
-    choiceC: "&lt;head&gt;",
-    choiceD: "&lt;script&gt;",
-    correctAnswer: "d"},
-
+        choiceA: "&lt;div&gt;",
+        choiceB: "&lt;link&gt;",
+        choiceC: "&lt;head&gt;",
+        choiceD: "&lt;script&gt;",
+        correctAnswer: "d"},
+    {
+        question: "How many elements can you apply to an 'ID' attribute?",
+        choiceA: "5",
+        choiceB: "1",
+        choiceC: "34",
+        choiceD: "35",
+        correctAnswer: "b"},
+    {
+        question: "What is used to style web page?",
+        choiceA: "HTTP",
+        choiceB: "JSON",
+        choiceC: "CSS",
+        choiceD: "HTML",
+        correctAnswer: "c"},
+    {
+        question: "What number do Arrays start on?",
+        choiceA: "1",
+        choiceB: "0",
+        choiceC: "34",
+        choiceD: "35",
+        correctAnswer: "b"},  
+    {
+        question: "WWW stands for?",
+        choiceA: "We Work Weekends",
+        choiceB: "Will Willow Weak",
+        choiceC: "World Wide Web",
+        choiceD: "Where's Waldo Wierdo",
+        correctAnswer: "c"},
 ]
 
 

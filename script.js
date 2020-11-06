@@ -1,3 +1,7 @@
+//button starts the quiz!
+startQuizButton.addEventListener("click",startQuiz);
+
+
 // html vars 
 var quizBody = document.getElementById("quiz");
 var finalScoreEl = document.getElementById("finalScore");
@@ -21,6 +25,7 @@ var buttonD = document.getElementById("d");
 
 
 
+
 //Code Quiz questions
 var quizQuestions = [{
     question: "What does the acronym D.O.M. stand for?",
@@ -38,3 +43,50 @@ var quizQuestions = [{
     correctAnswer: "d"},
 
 ]
+
+
+
+
+
+// Start Quiz function starts the TimeRanges, hides the start button, and displays the first quiz question.
+function startQuiz(){
+    gameoverDiv.style.display = "none";
+    startQuizDiv.style.display = "none";
+    generateQuizQuestion();
+
+    //Timer
+    timerInterval = setInterval(function() {
+        timeLeft--;
+        quizTimer.textContent = "Time left: " + timeLeft;
+    
+        if(timeLeft === 0) {
+          clearInterval(timerInterval);
+          showScore();
+        }
+      }, 1000);
+    quizBody.style.display = "block";
+}
+
+
+// This function checks the response to each answer 
+function checkAnswer(answer){
+    correct = quizQuestions[currentQuestionIndex].correctAnswer;
+
+    if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
+        score++;
+        alert("That Is Correct!");
+        currentQuestionIndex++;
+        generateQuizQuestion();
+        //display in the results div that the answer is correct.
+    }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+        alert("That Is Incorrect.")
+        currentQuestionIndex++;
+        generateQuizQuestion();
+        //display in the results div that the answer is wrong.
+    }else{
+        showScore();
+    }
+}
+
+// This button starts the quiz!
+startQuizButton.addEventListener("click",startQuiz);

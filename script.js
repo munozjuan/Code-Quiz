@@ -22,7 +22,7 @@ var buttonD = document.getElementById("d");
 
 
 
-//Code Quiz questions
+//Code Quiz Questions
 var quizQuestions = [{
         question: "What does the acronym D.O.M. stand for?",
         choiceA: "Digital Object Model",
@@ -118,7 +118,7 @@ function showScore(){
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
     highscoreInputName.value = "";
-    finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
+    finalScoreEl.innerHTML = "All Done! You got " + score + " out of " + quizQuestions.length + " correct!";
 }
 
 // On click of the submit button, we run the function highscore that saves and stringifies the array of high scores already saved in local stoage

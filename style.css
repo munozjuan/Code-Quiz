@@ -5,3 +5,23 @@ root{
         font-family: 'Times New Roman';
         margin-top: -.5rem;
     }
+
+    input{
+        text-align: center;
+    }
+
+    li{
+        padding-bottom: 3px;
+        color: white;
+        text-shadow: 1.5px 1px 3px black;
+        list-style-type: none;
+    }
+
+    p{
+        color: black;
+        text-shadow: .5px .5px white;
+        text-align: center;
+        font-size: xx-large;
+        font-family: sans-serif;
+    
+    }

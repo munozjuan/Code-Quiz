@@ -1,8 +1,8 @@
 # Code-Quiz
 # Juan Munoz
 
-![Code Quiz Generator](/images/pic1) 
-![first question](/images/pic2) 
+![Code Quiz Generator](/images/pic1.png) 
+![first question](/images/pic2.png) 
 
 
  
